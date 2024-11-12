@@ -1,0 +1,18 @@
+{{define "meta"}}
+<meta charset="utf-8">
+{{end}}
+{{define "styles"}}
+<style> 
+table th {color: red}; 
+</style>
+{{end}}    
+{{define "scripts"}}
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+        setTimeout(sayHello, 1000);
+    }); 
+    function sayHello() {
+        alert("Hello from scripts!");
+    } 
+    </script>
+    {{end}}
