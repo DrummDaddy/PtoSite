@@ -1,12 +1,25 @@
 <!DOCTYPE html> 
-<html lang="ru"> 
+<html lang="ru">
     <meta charset="UTF-8">
-    <title><Title></title>
-    </head>
-    <body> 
-        <h1>Привет ПТОшникам!</h1h1> 
+    <title>Форма заявки</title>
+</head> 
+<body>
+    <h1>Привет ПТОшникам!</h1>
+    <img src="/public/img/PTO.jpg" alt="это пто">
 
-            <img src="/public/img/PTO.jpg" alt="это пто">
-            
-            </body>
-        </html>
+    <h2>Оставьте вашу заявку:</h2>
+    <from action="/submit" method="POST">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required><br> 
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <button type="submit">Отправить заявку</button>
+    </from>
+
+</body>
+</html>

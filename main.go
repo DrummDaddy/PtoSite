@@ -26,4 +26,5 @@ func routes(r *httprouter.Router) {
 	// что следует выполнять при входящих запросах указанного типа и по указанному адресу
 	r.GET("/", controller.StartPage)
 	r.GET("/users", controller.GetUsers)
+	//r.POST("/submit", controller.SubmitForm)
 }
